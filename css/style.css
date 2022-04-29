@@ -1,0 +1,402 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&family=Philosopher&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden; }
+
+.back_to_top {
+  position: fixed;
+  bottom: 50px;
+  right: 55px;
+  z-index: 9999;
+  width: 40px;
+  height: 75px;
+  text-align: center;
+  line-height: 80px;
+  color: #B9A4BC;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 80px;
+  border-radius: 15px;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  font-family: 'Philosopher';
+  border: 0px solid #000; }
+
+.back_to_top:hover {
+  color: #B9A4BC;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  -webkit-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2);
+  box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, 0.2); }
+
+.back_to_top:active {
+  -webkit-transition: all 0.1s ease 0s;
+  -o-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+  bottom: 48px;
+  -webkit-box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2);
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 255, 0.2); }
+
+.back_to_top-show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s; }
+
+.contenier {
+  position: relative;
+  text-align: center;
+  color: #666;
+  z-index: 2; }
+  .contenier span {
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease 0.1s;
+    -o-transition: all 0.4s ease 0.1s;
+    transition: all 0.4s ease 0.1s; }
+    .contenier span:hover {
+      font-size: 35px;
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s; }
+
+.aboutme {
+  position: absolute;
+  top: 60px;
+  left: 30%;
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase; }
+  .aboutme a {
+    color: #8C8888; }
+
+.pagetwo {
+  position: relative;
+  border: 0px solid #000; }
+
+.cloud {
+  position: absolute;
+  z-index: 1;
+  top: -200px;
+  left: 70%;
+  opacity: 0;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px); }
+
+.cloud.cloud-show {
+  opacity: 1;
+  left: 65%;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transform: translateZ(0%);
+  transform: translateZ(0%); }
+
+.cloudtwo {
+  position: absolute;
+  z-index: 1;
+  top: 350px;
+  left: 0px;
+  opacity: 0;
+  -webkit-transform: translateZ(20px);
+  transform: translateZ(20px); }
+
+.cloudtwo.cloud-snow {
+  opacity: 1;
+  left: 30px;
+  -webkit-transition: all 1s ease 0.1s;
+  -o-transition: all 1s ease 0.1s;
+  transition: all 1s ease 0.1s;
+  -webkit-transform: translateZ(0%);
+  transform: translateZ(0%); }
+
+.serve {
+  position: absolute;
+  top: 60px;
+  left: 45%;
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase; }
+  .serve a {
+    color: #8C8888; }
+
+.contact {
+  position: absolute;
+  top: 60px;
+  left: 60%;
+  font-family: 'Philosopher';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 35px;
+  text-transform: uppercase; }
+  .contact a {
+    color: #8C8888; }
+
+.booking {
+  position: absolute;
+  top: 68%;
+  left: 27.7%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .booking a {
+    font-family: 'Philosopher';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 52px;
+    color: #8C8888; }
+  .booking span {
+    -webkit-transition: all 0.4s ease 0.1s;
+    -o-transition: all 0.4s ease 0.1s;
+    transition: all 0.4s ease 0.1s; }
+    .booking span:hover {
+      font-size: 54px;
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s; }
+
+.arrow {
+  position: absolute;
+  top: 80%;
+  left: 27.7%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  color: #E3DCE4; }
+
+.pagethree {
+  position: relative;
+  z-index: 2; }
+
+.pagefour {
+  position: relative; }
+
+.buy {
+  position: absolute;
+  top: 73%;
+  left: 24%; }
+  .buy span {
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #E3DCE4;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFF;
+    -webkit-box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+    -webkit-transition: all 0.1s ease 0s;
+    -o-transition: all 0.1s ease 0s;
+    transition: all 0.1s ease 0s; }
+    .buy span:hover {
+      cursor: pointer; }
+    .buy span:active {
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s;
+      -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2);
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2); }
+
+.buytwo {
+  position: absolute;
+  top: 73%;
+  right: 23.5%; }
+  .buytwo span {
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #E3DCE4;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #FFF;
+    -webkit-box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, 0.2);
+    -webkit-transition: all 0.1s ease 0s;
+    -o-transition: all 0.1s ease 0s;
+    transition: all 0.1s ease 0s; }
+    .buytwo span:hover {
+      cursor: pointer; }
+    .buytwo span:active {
+      -webkit-transition: all 0.2s ease 0s;
+      -o-transition: all 0.2s ease 0s;
+      transition: all 0.2s ease 0s;
+      -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2);
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2); }
+
+.text {
+  position: absolute;
+  top: 92%;
+  left: 5%;
+  color: rgba(0, 0, 255, 0.5);
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase; }
+
+.vk {
+  position: absolute;
+  top: 91%;
+  left: 16%; }
+
+.telega {
+  position: absolute;
+  top: 91.3%;
+  left: 19.5%; }
+
+.slider {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px; }
+
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider {
+  margin: 50px 0px 0px 50px; }
+  .slider .item img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important; }
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  -o-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0; }
+
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* Заголовок слайда */
+.slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000; }
+
+/* Кружочки */
+.slider-dots {
+  text-align: center; }
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; }
+
+.active,
+.slider-dots_item:hover {
+  background-color: #aaa; }
